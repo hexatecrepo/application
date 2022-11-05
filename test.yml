@@ -5,4 +5,4 @@
   become_user: ansible
   tasks:
   - name: ping all
-    ping: 
+    ping:
