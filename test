@@ -1,0 +1,7 @@
+---
+- name: "Build container with ansible"
+  hosts: master
+  tasks:
+  - name: stop running container
+    command: ansible -m ping master
+    ignore_errors: yes
