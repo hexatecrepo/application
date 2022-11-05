@@ -5,6 +5,5 @@
   become_method: su
   become_user: ansible
   tasks:
-  - name: stop running container
-    command: ansible -m ping all
-    ignore_errors: yes
+  - name: ping all
+    ping: 
