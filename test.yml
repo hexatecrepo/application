@@ -1,6 +1,9 @@
 ---
 - name: "Build container with ansible"
   hosts: master
+  become: yes
+  become_method: su
+  become_user: ansible
   tasks:
   - name: stop running container
     command: ansible -m ping master
