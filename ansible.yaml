@@ -1,0 +1,7 @@
+---
+- name: "Build pod with ansible"
+  hosts: master
+  tasks:
+  - name: stop running container
+    command: kubectl apply -f hexatecdepl.yaml
+    ignore_errors: yes
