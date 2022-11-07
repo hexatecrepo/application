@@ -1,6 +1,6 @@
 ---
 - name: "Build container with ansible"
-  hosts: all
+  hosts: master
   become_user: ansible
   tasks:
   - name: ping all
