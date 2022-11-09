@@ -4,5 +4,5 @@
   become: yes
   become_user: ansible
   tasks:
-  - name: stop running container
+  - name: executer le manifest kubernetes
     command: kubectl apply -f hexatecdepl.yaml
